@@ -1,0 +1,40 @@
+{
+  "name": "useraddress",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "export NODE_ENV=production && node src/prod-server/index.js",
+    "serve": "concurrently \"export NODE_ENV=development\" \"babel src/api  --out-dir src/prod-server --watch\" \"nodemon src/prod-server/index.js\" \"npm run dev\" ",
+    "build": "export NODE_ENV=production && babel src/api --out-dir src/prod-server && vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "dev": "vue-cli-service serve"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.2",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "express": "^4.17.1",
+    "jquery": "^3.3.1",
+    "jsonwebtoken": "^8.3.0",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.7",
+    "popper.js": "^1.14.3",
+    "url-parse": "^1.4.3",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-rc.4",
+    "@vue/cli-service": "^3.0.0-rc.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^3.6.1",
+    "cors": "^2.8.4",
+    "morgan": "^1.9.1",
+    "vue-template-compiler": "^2.5.16"
+  }
+}
