@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.4",
-    "@vue/cli-service": "^3.0.0-rc.4",
+    "@vue/cli-service": "^5.0.8",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "concurrently": "^3.6.1",
